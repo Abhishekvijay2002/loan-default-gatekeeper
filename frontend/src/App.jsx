@@ -71,8 +71,8 @@ export default function App() {
     };
 
     try {
-      const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000" ;
-      //  "https://loan-default-gatekeeper-u7sr.vercel.app/"
+      const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000" || "https://loan-default-gatekeeper-u7sr.vercel.app/" ;
+    
       const res = await fetch(`${API_BASE_URL}/api/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
