@@ -6,10 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "loan_default_gatekeeper(2).joblib")
+MODEL_PATH = os.path.join(BASE_DIR, "loan_default_gatekeeper (3).joblib")
 bundle = joblib.load(MODEL_PATH)
 
-MODEL_PATH = "loan_default_gatekeeper(2).joblib"
+MODEL_PATH = "loan_default_gatekeeper (3).joblib"
 bundle = joblib.load(MODEL_PATH)
 
 rf_model = bundle["model"]
